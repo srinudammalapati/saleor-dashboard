@@ -1,5 +1,7 @@
 pipeline {
     agent {label 'jdk11'}
+    triggers {
+        pollSCM('* * * * *')
     }
     stages {
         stage ('git clone') {
