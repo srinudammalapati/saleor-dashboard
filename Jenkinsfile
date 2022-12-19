@@ -1,6 +1,6 @@
 pipeline {
     agent {label 'jdk11'}
-    tiggers {
+    triggers {
         pollSCM('* * * * *')
     }
     stages {
